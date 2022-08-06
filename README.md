@@ -20,6 +20,12 @@ Clone the repository
 https://github.com/axelluguercio/terraform_gcp.git
 ```
 
+change to the example directory
+
+```
+[[ `basename $PWD` != terraform_k8s ]] && cd terraform_k8s
+```
+
 Export your gcp project id to plan and apply all changes
 
 ```
@@ -29,6 +35,7 @@ export TF_VAR_project_id=YOUR_GCP_PROJECT_ID
 Verify the all config files with terraform plan
 
 ```
+terraform init
 terraform plan
 ```
 
